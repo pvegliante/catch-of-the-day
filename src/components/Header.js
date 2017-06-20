@@ -17,7 +17,9 @@ import React from 'react';
     )
   }
 
-  
+  Header.proptypes = {
+    tagline: React.PropTypes.string.isRequired
+  }
 
 
 export default Header;
