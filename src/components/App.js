@@ -16,7 +16,7 @@ class App extends React.Component {
     this.updateFish = this.updateFish.bind(this);
     this.removeFish = this.removeFish.bind(this);
     this.removeFromOrder = this.removeFromOrder.bind(this);
-    //getinitial state
+    //get initial state
     this.state = {
       fishes: {},
       order: {}
@@ -119,7 +119,10 @@ removeFromOrder(key) {
           loadSamples={this.loadSamples}
           fishes={this.state.fishes}
           updateFish={this.updateFish}
-          removeFish={this.removeFish}/>
+          removeFish={this.removeFish}
+          storeId={this.props.params.
+            storeId}
+           />
       </div>
     )
   }
